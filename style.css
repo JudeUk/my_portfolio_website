@@ -35,7 +35,7 @@ body{
     pointer-events: none;
 }
 
-.navbar a{
+/* .navbar a{
 
     font-size: 18px;
     color:#fff;
@@ -44,13 +44,16 @@ body{
     margin-left: 35px;
 }
 
-.navbar a.active,.navbar a:hover{
+.navbar ul li{
+    list-style-type: none;
+} */
 
+/* .navbar a.active, .navbar a:hover{
     background: linear-gradient(45deg, #f06,#3cf);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+} */
 
-}
 
 .home{
     width: 100%;
@@ -203,3 +206,136 @@ background-position: 100% 0;
     border-radius: 50%;
 }
 
+
+.centered-about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 800px; /* Adjust this value to control the width of the content */
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.portfolio {
+    background: #0c1022;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+.portfolio-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.portfolio-description {
+    flex: 1;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.portfolio-description h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.portfolio-description p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+/* Contact Section */
+
+/* Contact Section */
+.contact {
+    background: #0c1022;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact .info {
+    margin-bottom: 30px;
+}
+
+.contact .info i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #f06;
+}
+
+.contact .info h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.contact .info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.contact form .form-control {
+    background: #0c1022;
+    color: #fff;
+    border: 1px solid #f06;
+}
+
+.contact form textarea {
+    background: #0c1022;
+    color: #fff;
+    border: 1px solid #f06;
+}
+
+.contact form button {
+    background: #f06;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background: #3cf;
+}
