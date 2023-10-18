@@ -466,7 +466,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="#" method="post" role="form" class="php-email-form" onsubmit="return showSuccessModal(event)">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -490,6 +490,45 @@
             </form>
 
           </div>
+
+
+    <div id="successModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Email sent. Thank you!</p>
+    </div>
+</div>
+
+<script>
+    function showSuccessModal(event) {
+        // Prevent the form from submitting
+        event.preventDefault();
+
+        // Show the success modal
+        document.getElementById("successModal").style.display = "block";
+
+        // Hide the form elements
+        document.querySelector(".php-email-form").style.display = "none";
+
+        return false; // Prevent the default form submission
+    }
+
+    function closeModal() {
+        // Close the success modal
+        document.getElementById("successModal").style.display = "none";
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
 
