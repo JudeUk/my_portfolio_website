@@ -1279,3 +1279,35 @@ section {
   height: 100%; /* Make the image take up the entire height of the container */
   object-fit: cover; /* Maintain the aspect ratio and cover the container */
 }
+
+
+/* Your existing CSS */
+
+.portfolio-section {
+  text-align: center;
+  background-color: #0c1022; /* Adjust to match your theme */
+  color: #fff;
+  padding: 40px;
+}
+
+.portfolio-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.portfolio-section p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.portfolio-section a {
+  color: #3cf; /* Color for links */
+  text-decoration: none;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .portfolio-section {
+      padding: 20px;
+  }
+}
