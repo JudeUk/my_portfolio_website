@@ -1263,3 +1263,19 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+
+
+
+/* CSS for portfolio items */
+.portfolio-item {
+  width: 300px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  overflow: hidden; /* Clip the image to the container dimensions */
+}
+
+.portfolio-item img {
+  width: 100%; /* Make the image take up the entire width of the container */
+  height: 100%; /* Make the image take up the entire height of the container */
+  object-fit: cover; /* Maintain the aspect ratio and cover the container */
+}
